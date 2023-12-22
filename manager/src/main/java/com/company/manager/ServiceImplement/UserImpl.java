@@ -38,4 +38,14 @@ public class UserImpl implements UserService {
         }
         return false;
     }
+
+    @Override
+    public User loginUser(User user) {
+        User user2 = repo.findByEmail(user.getEmail());
+        return user2;
+        // if (user.getPassword() == user2.getPassword()) {
+        // return true;
+        // }
+        // return false;
+    }
 }

@@ -9,6 +9,8 @@ public interface UserService {
 
     public User getUser(Long id);
 
+    public User loginUser(User user);
+
     public boolean addUser(User user);
 
     public boolean deleteUser(Long id);

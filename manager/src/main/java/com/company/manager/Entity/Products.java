@@ -36,7 +36,7 @@ public class Products {
 
     private Long del;
 
-    private int inStock;
+    private Long inStock;
 
     @Column(name = "date", columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     private Date date;
